@@ -1,0 +1,35 @@
+{
+  "name": "tailwindcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "public/index.html",
+  "scripts": {
+    "watch": "cross-env NODE_ENV=Dev concurrently \"postcss public/style/main.css -o public/style/src/tailwind.css --watch\"  \"live-server ./public\"",
+    "Dev": "cross-env NODE_ENV=Dev postcss public/style/main.css -o public/style/src/tailwind.css",
+    "Build": "cross-env NODE_ENV=Build postcss public/style/main.css -o public/style/src/tailwind.css",
+    "start": "npm run watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeremy-Kimhout-Sam/tailwindcss.git"
+  },
+  "author": "Jeremy_Kimhout_Sam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jeremy-Kimhout-Sam/tailwindcss/issues"
+  },
+  "homepage": "https://github.com/Jeremy-Kimhout-Sam/tailwindcss#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.4",
+    "concurrently": "^5.3.0",
+    "cross-env": "^7.0.3",
+    "cssnano": "^4.1.10",
+    "eslint-config-prettier": "^7.2.0",
+    "live-server": "^1.2.1",
+    "postcss": "^8.2.6",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.3",
+    "eslint": "^7.20.0",
+    "prettier": "^2.2.1"
+  }
+}
